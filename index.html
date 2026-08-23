@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Đơn Quán Ăn</title>
+
+    <!-- 1. Nhúng file CSS vào thẻ head -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>QUÁN CHAY THIỆN DUYÊN</h1>
+        <p>Thực đơn Món ăn & Thức uống</p>
+    </header>
+
+    <!-- Thanh Lọc Danh Mục -->
+    <div class="category-bar">
+        <button class="category-btn active" onclick="filterMenu('all', event)">Tất cả</button>
+        <button class="category-btn" onclick="filterMenu('lau', event)">Lẩu</button>
+        <button class="category-btn" onclick="filterMenu('mon-them', event)">Món thêm lẩu</button>
+        <button class="category-btn" onclick="filterMenu('rice', event)">Cơm chiên</button>
+        <button class="category-btn" onclick="filterMenu('snack', event)">Ăn vặt</button>
+        <button class="category-btn" onclick="filterMenu('cuon', event)">Món cuốn</button>
+        <button class="category-btn" onclick="filterMenu('goi', event)">Gỏi</button>
+        <button class="category-btn" onclick="filterMenu('main', event)">Món chính</button>
+        <button class="category-btn" onclick="filterMenu('drink', event)">Đồ Uống</button>
+    </div>
+
+    <div class="container" id="menu-list">
+        <!-- Dữ liệu món ăn được tự động hiển thị ở đây -->
+    </div>
+
+    <!-- 2. Nhúng file Javascript ngay TRƯỚC thẻ đóng </body> -->
+    <script src="script.js"></script>
+
+</body>
+</html>
